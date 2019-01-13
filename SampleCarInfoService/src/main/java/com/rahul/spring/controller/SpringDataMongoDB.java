@@ -13,39 +13,6 @@ public class SpringDataMongoDB {
 	public static final String PERSON_COLLECTION = "samplecollection";
 	public static final String MONGO_HOST = "localhost";
 	public static final int MONGO_PORT = 27017;
-
-//	public static void main(String[] args) {
-//		try {
-//			MongoClient mongo = new MongoClient(
-//					MONGO_HOST, MONGO_PORT);
-//			MongoOperations mongoOps = new MongoTemplate(mongo, DB_NAME);
-//			CarDetails p = new CarDetails();
-//			//p.setId(10);
-//			p.setManufacturerName("Honda");
-//			p.setManufacturingYear("2011");
-//			p.setModel("cityZX ");
-//			System.out.println("11111111111");
-//			mongoOps.insert(p, PERSON_COLLECTION);
-//			System.out.println("222222222");
-//			
-//			CarDetails p1 = mongoOps.findOne(new Query(Criteria.where("model").is("cityZX ")),
-//					CarDetails.class, PERSON_COLLECTION);
-//			CarDetails p1 = mongoOps.findOne(
-//					new Query(Criteria.where("name").is("PankajKr")),
-//					CarDetails.class, PERSON_COLLECTION);
-//
-//			System.out.println(p1.getManufacturerName());
-//			
-//			mongoOps.dropCollection(PERSON_COLLECTION);
-//			mongo.close();
-//		}
-//		catch (UnknownHostException e) {
-//			e.printStackTrace();
-//		}
-//		catch (Exception ex){
-//			ex.printStackTrace();
-//		} 
-//	}
 	
 	public boolean insertDetails(String registrationNumber,String model,String manufacturerName,String manufacturingYear)
 	{
